@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>85-dars</title>
+</head>
+
+<body class="bgc">
+
+  <header class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    
+    <section>
+      <h1 class="visually-hidden">BOOKS</h1>
+      <section>
+        <h2 class="visually-hidden">BOOKS</h2>
+        <div class="container">
+          <p class="display-3 text-white text-center mt-3 mb-5">BOOKS</p>
+          <form class="book-form d-flex">
+            <input class="form-control me-2 search-input" type="search" name="search" aria-label="search"
+            placeholder="search">
+            <select class="form-select me-2" id="language" name="language">
+              <option value="all">All language</option>
+            </select>
+            <!-- <select class="form-select me-2" id="type" name="type">
+              <option value="all">All Types</option>
+            </select> -->
+            <select name="select" class="form-select select-search d-block w-25 me-2 mx-0">
+              <option value="a_z">A-Z</option>
+              <option value="z_a">Z-A</option>
+              <option value="tohigh">Year: old-new</option>
+              <option value="tolow">Year: new-old</option>
+              <option value="pagestoup">Page: less to more</option>
+              <option value="pagestodown">Page: more to less</option>
+            </select>
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+          <div class="box mt-5">
+            <ul class="list list-unstyled row justify-content-center">
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <template class="template">
+      <li
+      class="item rounded-3 col-md-3 m-1 p-3 px-4position-relative rounded-4 justify-content-center list-item">
+      <div class="cards d-flex flex-column align-items-center justify-content-center text-">
+        <img class="book img-thumbnail" src="./images/anna-karenina.jpg" width="200" height="360" alt="image">
+        <div class="carditems p-3">
+          <h3 class="title my-2">The book</h3>
+          <div class="wrapcard d-flex justify-content-between align-items-center my-3">
+            <div class="left d-flex align-items-center me-2">
+              <img class="me-2" src="./icons/pages.svg" width="25" height="25" alt="icon">
+              <span class="page fs-5">789</span>
+            </div>
+            <div class="ms-5 d-flex align-items-center">
+              <img class="me-2" src="./icons/author.svg" width="25" height="25" alt="">
+              <span class="author fs-5">author</span>
+            </div>
+          </div>
+          <div class="wrapbtm d-flex justify-content-between align-items-center">
+            <div class="left d-flex align-items-center">
+              <img class="me-2" src="./icons/year.svg" width="25" height="25" alt="icon">
+              <span class="year fs-5">2010</span>
+            </div>
+            <div class="right d-flex align-items-center mb-3">
+              <img class="me-2" src="./icons/language.svg" width="25" height="25" alt="icon">
+              <span class="language fs-5">English</span>
+            </div>
+          </div>
+          <a class="wiki btn btn-link text-decoration-none text-white" href="#" target="blank">Wikipedia</a>
+        </div>
+      </div>
+    </li>
+  </template>
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/books.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

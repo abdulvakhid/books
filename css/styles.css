@@ -1,0 +1,9 @@
+.bgc{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7346288857339811) 0%, rgba(143,201,87,1) 0%, rgba(0,212,255,1) 73%);
+}
+
+.list-item{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(181,189,102,1) 76%, rgba(253,187,45,1) 100%);
+}
